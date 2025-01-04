@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --font-family: "Poppins", sans-serif;
   
@@ -23,7 +29,7 @@
   --brand-dark: #E43A12;
 }
 
-body {
-  background-color: #B8CEDC;
-
+body {  
+  overflow: hidden;
+  
 }

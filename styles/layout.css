@@ -1,0 +1,32 @@
+#app {
+  display: grid;
+  /* main tem 656px e aside tem 624px
+    logo, o total é de 1280px
+    656 de 1280 = 51,25% (656 / 1280)
+    624 de 1280 = 48,75% (624 / 1280) */
+  grid-template-columns: 51.25% 48.75%;
+
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  overflow: auto;
+  /* O padding é de 64px. Logo, 64px / 16px = 4 rem */
+  padding: 4rem;
+  /* Largura máxima é de 528px  */
+  .main-container {
+    max-width: 33rem;
+    margin-left: auto;
+  }
+}
+
+aside {
+  /* O padding é de 64px. Logo, 64px / 16px = 4 rem */
+  padding: 4rem;
+  background-color: var(--surface-secondary);
+  /* Largura máxima é de 496px  */
+  & .aside-container {
+    max-width: 31rem;
+  }
+}
